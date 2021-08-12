@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useCallback } from 'react';
+import printJS from 'print-js';
 
 function App() {
+  const [isScan, setIsScan] = useState(false);
+
+  const handleScan = useCallback(async () => {
+    function loadingData() {
+      console.log('loading complete!!');
+    }
+    await loadingData();
+    setIsScan(true);
+    printJS('print', 'html');
+  }, [setIsScan]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {isScan && <div id='print'>test page</div>}
+      <button onClick={handleScan}>스캔</button>
     </div>
   );
 }
