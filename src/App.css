@@ -26,9 +26,109 @@
   font-size: 10px;
   font-weight: bold;
   margin-left: 1px;
+  margin-right: 25px;
+}
+.invoice-text {
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.order-date-text {
+  font-size: 8px;
+  font-weight: bold;
+  margin-right: 40px;
+}
+.print-page-text {
+  font-size: 8px;
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+.reprint-text {
+  font-size: 8px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.invoice-wrapper {
+  display: flex;
 }
 
 .barcode-wrapper {
-  width: 98%;
+  width: 30mm;
   height: 15mm;
+  margin-left: 5mm;
+}
+
+.division-code-text {
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+}
+
+.delivery-code-text {
+  font-size: 53px;
+  font-weight: bold;
+  background-color: rgb(253, 242, 80);
+}
+
+.address-wrapper {
+  height: 20mm;
+  display: flex;
+  margin-top: 2px;
+}
+
+.address-title {
+  width: 5mm;
+  color: #fff;
+  font-size: 16px;
+  background-color: rgb(82, 160, 227);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-left: 1mm;
+}
+
+.address-content-wrapper {
+  background-color: rgb(253, 242, 80);
+  width: calc(100% - 5mm);
+  box-sizing: border-box;
+  padding-left: 1mm;
+}
+
+.address-content-sub {
+  height: 5mm;
+  display: flex;
+}
+.address-content-sub-text {
+  font-size: 10px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.address-content-phone-number-text {
+  font-size: 10px;
+  font-weight: bold;
+}
+.address-content-sub-bar {
+  margin: 0 6px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.invoice-barcode-wrapper {
+  width: 38mm;
+}
+
+.address-content-main {
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.address-content-detail {
+  font-size: 24px;
+  font-weight: bold;
 }
