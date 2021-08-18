@@ -4,10 +4,11 @@
 
 .print-page-container {
   width: 121mm;
-  height: 98mm;
+  height: 102mm;
   border-radius: 10px;
   border: 1px solid rgb(240, 194, 197);
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .header-wrapper {
@@ -53,6 +54,7 @@
 
 .invoice-wrapper {
   display: flex;
+  height: 15mm;
 }
 
 .barcode-wrapper {
@@ -131,4 +133,165 @@
 .address-content-detail {
   font-size: 24px;
   font-weight: bold;
+}
+
+.sender-wrapper {
+  height: 7mm;
+  display: flex;
+}
+.sender-name-title {
+  width: 5mm;
+  color: #fff;
+  font-size: 10px;
+  background-color: rgb(82, 160, 227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-left: 1mm;
+  margin-right: 20px;
+}
+.sender-info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sender-info-main {
+  display: flex;
+}
+
+.sender-name-text {
+  font-weight: bold;
+  font-size: 7px;
+  margin-right: 50px;
+}
+
+.sender-phone-number-text {
+  font-weight: bold;
+  font-size: 7px;
+  margin-right: 20px;
+}
+
+.box-info-title {
+  color: #fff;
+  font-size: 10px;
+  background-color: rgb(82, 160, 227);
+  padding: 0 2px;
+  margin-right: 10px;
+}
+
+.box-info-text {
+  font-weight: bold;
+  font-size: 10px;
+  margin-right: 25px;
+}
+
+.fare-title {
+  color: #fff;
+  font-size: 10px;
+  background-color: rgb(82, 160, 227);
+  padding: 0 2px;
+  margin-right: 10px;
+}
+
+.fare-text {
+  font-weight: bold;
+  font-size: 10px;
+  margin-right: 25px;
+}
+
+.fare-info-title {
+  color: #fff;
+  font-size: 10px;
+  background-color: rgb(82, 160, 227);
+  padding: 0 2px;
+  margin-right: 10px;
+}
+
+.fare-info-text {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.sender-info-address-text {
+  font-weight: bold;
+  font-size: 8px;
+}
+
+.product-name-wrapper {
+  height: 33mm;
+  box-sizing: border-box;
+  padding: 2px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+.product-name-text {
+  font-weight: bold;
+  font-size: 9px;
+}
+
+.footer {
+  height: 15mm;
+  display: flex;
+}
+
+.delivery-info-wrapper {
+  background-color: rgb(253, 242, 80);
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.delivery-address-text {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.delivery-message-text {
+  font-weight: bold;
+  font-size: 8px;
+}
+
+.delivery-detail-wrapper {
+  padding-top: 10px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.delivery-short-text {
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.delivery-detail-fare-title {
+  color: #fff;
+  font-size: 10px;
+  background-color: rgb(82, 160, 227);
+  padding: 0 2px;
+  margin-right: 20px;
+}
+
+.delivery-detail-fare-text {
+  font-weight: bold;
+  font-size: 10px;
+  margin-right: 20px;
+}
+
+.delivery-detail-fare-info-title {
+  color: #fff;
+  font-size: 10px;
+  background-color: rgb(82, 160, 227);
+  padding: 0 2px;
+  margin-right: 20px;
+}
+
+.delivery-detail-fare-info-text {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.delivery-barcode-wrapper {
+  margin-left: 20px;
 }

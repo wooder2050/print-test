@@ -73,6 +73,14 @@ function App() {
       displayValue: false,
       margin: 0,
     });
+
+    Jsbarcode("#delivery-barcode", mockData.invoiceBarcode, {
+      width: 1,
+      height: 41,
+      displayValue: true,
+      margin: 0,
+      fontSize: 10,
+    });
   }, []);
 
   return (
@@ -118,6 +126,60 @@ function App() {
               <div className="address-content-detail">
                 {mockData.receiver.detailAddress}
               </div>
+            </div>
+          </div>
+
+          <div className="sender-wrapper">
+            <div className="sender-name-title">보내는분</div>
+            <div className="sender-info-wrapper">
+              <div className="sender-info-main">
+                <div className="sender-name-text">{mockData.sender.name}</div>
+                <div className="sender-phone-number-text">
+                  {mockData.sender.mobilePhoneNumber}
+                </div>
+                <div className="box-info-title">수량</div>
+                <div className="box-info-text">{mockData.boxInfo}</div>
+                <div className="fare-title">운임</div>
+                <div className="fare-text">{mockData.fare}</div>
+                <div className="fare-info-title">정산</div>
+                <div className="fare-info-text">{mockData.fareInfo}</div>
+              </div>
+              <div className="sender-info-address-text">
+                {mockData.sender.address}
+              </div>
+            </div>
+          </div>
+
+          <div className="product-name-wrapper">
+            {mockData.productName.map((name) => (
+              <div className="product-name-text" key={name}>
+                {name}
+              </div>
+            ))}
+          </div>
+
+          <div className="footer">
+            <div className="delivery-info-wrapper">
+              <div className="delivery-address-text">
+                {mockData.deliveryAddress}
+              </div>
+              <div className="delivery-message-text">
+                {mockData.deliveryMessage}
+              </div>
+              <div className="delivery-detail-wrapper">
+                <div className="delivery-short-text">
+                  {`${mockData.deliveryPoint}-${mockData.deliveryPerson}-${mockData.deliveryPointShort}`}
+                </div>
+                <div className="delivery-detail-fare-title">운임</div>
+                <div className="delivery-detail-fare-text">{mockData.fare}</div>
+                <div className="delivery-detail-fare-info-title">정산</div>
+                <div className="delivery-detail-fare-info-text">
+                  {mockData.fareInfo}
+                </div>
+              </div>
+            </div>
+            <div className="delivery-barcode-wrapper">
+              <svg id="delivery-barcode" />
             </div>
           </div>
         </div>
